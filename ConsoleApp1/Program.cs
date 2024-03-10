@@ -7,8 +7,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args){
 
-            int[] a = [2, 5, 12, 4, 3];
-            countAverageFromIntArray(a);
+            int[] a = [13, 2, 100, 5, 12, 4, 3];
+            //countAverageFromIntArray(a);
+            writeMaxValueFromIntArray(a);
 
            /* int a = 0;
             int b = 0;
@@ -29,9 +30,20 @@ namespace ConsoleApp1
             for(int a = 0; a < b.Length; a++){
                 sum += b[a];
             }
-            Console.WriteLine("piwo");
             Console.WriteLine(sum/b.Length);
         }
+
+        static void writeMaxValueFromIntArray(int[] c){
+            int max = 0;
+
+            for(int a = 0; a < c.Length; a++){
+                if (max <= c[a])
+                    max = c[a];
+            }
+
+            Console.WriteLine(max);
+        }
+
 
     }
 }
